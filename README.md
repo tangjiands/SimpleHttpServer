@@ -30,3 +30,6 @@ int _tmain(int argc, _TCHAR* argv[])
 	http_server.Start();
         return 0;
 }
+
+
+注意:只支持GET!!!!
