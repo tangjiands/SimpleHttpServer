@@ -19,7 +19,8 @@ bool handle_fun1(std::string url, std::string body, mg_connection* c, OnRspCallb
 	return true;
 }
 
-int _tmain(int argc, _TCHAR* argv[]) {
+int _tmain(int argc, _TCHAR* argv[]) 
+{
 
 	std::string port = "8090";
 	HttpServer http_server;
@@ -27,5 +28,5 @@ int _tmain(int argc, _TCHAR* argv[]) {
 	// add handler
 	http_server.AddHandler("/fun1", handle_fun1);
 	http_server.Start();
-  return 0;
+        return 0;
 }
